@@ -1,0 +1,15 @@
+---
+import CardPrecios from "../components/CardPrecios.astro";
+---
+
+<div class="flex flex-col p-6 h-dvh mx-auto">
+  <div class="flex flex-col space-y-3 w-full max-w-5xl mx-auto text-center">
+    <p>Precios</p>
+    <h1 class="text-blue-600 font-semibold text-3xl">Planes de precios</h1>
+    <p>Trasparencia y excelente relacion precio-calidad para todos.</p>
+  </div>
+  <div class="flex flex-wrap gap-4 justify-center w-full max-w-5xl mx-auto mt-6">
+    <CardPrecios description="Plan basico" title="$250.000" sub1="Diseño responsivo" sub2="Soporte tecnico 24/7" sub3="Optimizacion CEO basica" />
+    <CardPrecios description="Plan basico" title="$250.000" sub1="Diseño responsivo" sub2="Soporte tecnico 24/7" sub3="Optimizacion CEO basica" />
+  </div>
+</div>

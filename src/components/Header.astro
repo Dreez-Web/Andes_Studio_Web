@@ -1,0 +1,60 @@
+---
+import Menu from "../Iconos/Menu.astro";
+import Cerrar from "../Iconos/Cerrar.astro";
+---
+
+<header class="max-w-5xl mx-auto flex justify-between items-center relative">
+  <div class="flex items-center">
+    <img class="w-28" src="../andes_logo.svg" alt="Andes_Studio color-" />
+    <h2 class="hidden sm:text-lg sm:font-semibold sm:block">Andes Studio</h2>
+  </div>
+  <button class="sm:hidden mr-6" id="abrir">
+    <Menu />
+  </button>
+
+  <nav class="hidden sm:flex gap-5 absolute top-16 left-0 w-full bg-white shadow-md sm:static sm:shadow-none sm:w-auto sm:bg-transparent p-5 z-50" id="nav">
+    <button class="sm:hidden hidden" id="cerrar">
+      <Cerrar />
+    </button>
+    <ul class="flex flex-col sm:flex-row gap-3 items-start">
+      <li>
+        <a class="font-semibold text-slate-900 hover:text-slate-300" href="#">Inicio</a>
+      </li>
+      <li>
+        <a class="font-medium text-slate-900 hover:text-slate-300" href="#">Servicios</a>
+      </li>
+      <li>
+        <a class="font-medium text-slate-900 hover:text-slate-300" href="#">Testimonios</a>
+      </li>
+      <li>
+        <a class="font-medium text-slate-900 hover:text-slate-300" href="#">Precios</a>
+      </li>
+      <li>
+        <a class="font-medium text-slate-900 hover:text-slate-300" href="#">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button type="button" class="hidden sm:block -m-2.5 rounded-md p-2.5 mr-4 bg-blue-600 text-white hover:bg-blue-700" id="contact"> Contactanos </button>
+</header>
+
+<script>
+  const abrir = document.getElementById("abrir");
+  const cerrar = document.getElementById("cerrar");
+  const nav = document.getElementById("nav");
+  const contact = document.getElementById("contact");
+
+  if (abrir && cerrar && nav) {
+    abrir.addEventListener("click", () => {
+      nav.classList.remove("hidden");
+      abrir.classList.add("hidden");
+      cerrar.classList.remove("hidden");
+    });
+
+    cerrar.addEventListener("click", () => {
+      nav.classList.add("hidden");
+      abrir.classList.remove("hidden");
+      cerrar.classList.add("hidden");
+    });
+  }
+</script>

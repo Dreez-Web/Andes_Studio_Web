@@ -1,0 +1,45 @@
+---
+import Instagram from "../Iconos/Instagram.astro";
+import Facebook from "../Iconos/Facebook.astro";
+import Git from "../Iconos/Git.astro";
+---
+
+<footer class="flex flex-col items-center justify-center bg-gray-800 text-white">
+  <div class="flex items-center justify-between w-full max-w-7xl p-4">
+    <div class="flex items-center">
+      <img class="w-28" src="../andes_logo.svg" alt="Andes_Studio color-" />
+      <h2 class="hidden sm:text-lg sm:font-semibold sm:block">Andes Studio</h2>
+    </div>
+    <nav class="flex items-center gap-x-10">
+      <ul class="flex gap-5 items-center">
+        <li>
+          <a class="font-semibold hover:text-blue-300" href="#">Inicio</a>
+        </li>
+        <li>
+          <a class="font-semibold hover:text-blue-300" href="#">Servicios</a>
+        </li>
+        <li>
+          <a class="font-semibold hover:text-blue-300" href="#">Testimonios</a>
+        </li>
+        <li>
+          <a class="font-semibold hover:text-blue-300" href="#">Precios</a>
+        </li>
+        <li>
+          <a class="font-semibold hover:text-blue-300" href="#">Contacto</a>
+        </li>
+      </ul>
+
+      <ul class="flex gap-5 items-center">
+        <li><a href=""><Instagram /></a></li>
+        <li><a href=""><Facebook /></a></li>
+        <li><a href=""><Git /></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="flex items-center justify-between w-full max-w-7xl p-4">
+    <p>@2025 Andes_Studio. Todos los derechos reservados</p>
+    <a href="">Politicas de privacidad</a>
+    <a href="">Terminos de servicios</a>
+    <a href="">Cookie Settings</a>
+  </div>
+</footer>
