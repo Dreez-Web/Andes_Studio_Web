@@ -5,21 +5,22 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/andes_logo.svg" />
-    <meta name="generator" content={Astro.generator} />
     <title>Andes_Studio</title>
   </head>
-  <body class="bg-stone">
-    <Header />
-    <slot />
+  <body>
+    <div>
+      <Header />
+      <slot />
+    </div>
   </body>
 </html>
 
-<style>
+<style is:global>
   html,
   body {
     margin: 0;
