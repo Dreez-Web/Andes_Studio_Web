@@ -3,17 +3,17 @@ import Carro from "../Iconos/Carro.astro";
 const { description, title, link, sub1, sub2, sub3 } = Astro.props;
 ---
 
-<div class="flex flex-col items-center space-y-5 w-72 h-96 p-4 rounded shadow-md border border-gray-900">
+<div class="flex flex-col items-center space-y-5 w-72 h-96 p-6 rounded-xl shadow-md border border-gray-900 bg-stone-700">
   <div class="flex justify-end w-full">
     <Carro />
   </div>
   <div class="flex flex-col items-start space-y-4 w-full flex-grow px4">
-    <p>{description}</p>
-    <h1 class="text-2xl font-semibold">{title}</h1>
-    <p class="text-sm">Incluye:</p>
-    <li>{sub1}</li>
-    <li>{sub2}</li>
-    <li>{sub3}</li>
+    <p class="text-white">{description}</p>
+    <h1 class="text-4xl font-semibold text-white">{title}</h1>
+    <p class="text-sm text-white">Incluye:</p>
+    <li class="text-white">{sub2}</li>
+    <li class="text-white">{sub3}</li>
+    <li class="text-white">{sub1}</li>
   </div>
   <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-full py-2 px-4 rounded"> Comienza ahora </button>
 </div>
